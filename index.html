@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .father{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+    }
+    .son{
+        background-color:rgb(238, 92, 175);
+        padding:30px;
+        border:2px solid rbg(115,115,122);
+        border-radius:15px;
+    }
+    label{
+        color:black;
+    }
+    input{
+        padding:5px 10px;
+        font-size:25px;
+        margin-top:5px;
+        border:none;
+        cursor:pointer;
+        outline:none;
+        margin-bottom:5px;
+    }
+    h1{
+        margin-bottom:20px;
+    }
+    h1,
+    h2{
+        text-align:center;
+        color:black;
+    }
+</style>   
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+            <h1>Calculate%</h1>
+           
+            <label for="">Enter Total Marks</label> <br>
+            <input type="text" placeholder="number"id="no1"> <br>
+            <label for="">Enter Total Subjects No.</label> <br>
+            <input type="text" placeholder="number"id="no2"> <br>
+            <input type="submit" value="calculate" onclick="calculation()"> <br>
+            <h2 id="res">Result%</h2>
+
+        </div>
+    </div>
+    <script>
+        function calculation(){
+            var a=parseInt(document.getElementByld('no1').value);
+            var b=parseInt(document.getElementById('no2').value);
+             
+            var c=a+b;
+            document.getElementById("res").innerHTML="Result="+c;
+        }
+    </script>
+    
+</body>
+</html>
